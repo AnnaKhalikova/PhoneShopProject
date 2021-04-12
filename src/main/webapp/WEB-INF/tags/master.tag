@@ -9,7 +9,7 @@
 </head>
 <body class="product-list">
   <header>
-  <a href=https://onlinephonestore.herokuapp.com/products">
+  <a href=https://onlinephonestore.herokuapp.com/products>
       <img src="${pageContext.servletContext.contextPath}/images/logo.svg"/>
       PhoneShop
     </a>
