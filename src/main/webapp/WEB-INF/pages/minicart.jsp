@@ -10,7 +10,6 @@
     Cart:
   </a>-->
   
-  <button onclick="${pageContext.servletContext.contextPath}/cart" type="button">
-         Cart:/button>
+  <button onclick="${pageContext.servletContext.contextPath}/cart" type="button" value="Cart">
   quantity - ${not empty cart.totalQuantity ? cart.totalQuantity : 0}, cost - ${not empty fmtCost ? fmtCost : 0}
 </div>
