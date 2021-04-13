@@ -6,10 +6,8 @@
 <jsp:useBean id="cart" type="com.es.phoneshop.model.cart.Cart" scope="request"/>
 <fmt:formatNumber var="fmtCost" value="${cart.totalCost}" type="currency" currencySymbol="${cart.currency}" />
 <div class="minicart">
-  <!--<a href="${pageContext.servletContext.contextPath}/cart">
+  <a href="${pageContext.servletContext.contextPath}/cart">
     Cart:
-  </a>-->
-  
-  <input onclick="${href="pageContext.servletContext.contextPath}/cart" type="button" value="Cart"/>
+  </a>
   quantity - ${not empty cart.totalQuantity ? cart.totalQuantity : 0}, cost - ${not empty fmtCost ? fmtCost : 0}
 </div>
