@@ -6,8 +6,9 @@
 <jsp:useBean id="cart" type="com.es.phoneshop.model.cart.Cart" scope="request"/>
 <fmt:formatNumber var="fmtCost" value="${cart.totalCost}" type="currency" currencySymbol="${cart.currency}" />
 <div class="minicart">
-  <a href="${pageContext.servletContext.contextPath}/cart">
+  <input type="button" onclick="location.href='https://onlinephonestore.herokuapp.com/cart';" />
+  <!--<a href="${pageContext.servletContext.contextPath}/cart">
     Cart:
-  </a>
+  </a>-->
   quantity - ${not empty cart.totalQuantity ? cart.totalQuantity : 0}, cost - ${not empty fmtCost ? fmtCost : 0}
 </div>
